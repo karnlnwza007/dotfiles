@@ -5,3 +5,4 @@ ln -sf ~/dotfiles/style.css ~/.config/waybar/style.css
 ln -sf ~/dotfiles/config.jsonc ~/.config/waybar/config.jsonc
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/kitty.conf ~/.config/kitty/kitty.conf
