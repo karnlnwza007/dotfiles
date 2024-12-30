@@ -1,88 +1,91 @@
 {
-	"layer":"bottom",
-	"position":"top",
-	"height":"13",
-	"spacing":"3",
-	"modules-left":["hyprland/workspaces",/*"hyprland/submap"*/"hyprland/window"],
-	"modules-center":["clock"],
-	"modules-right":["idle_inhibitor","network","cpu","memory","battery","pulseaudio","tray"],
-	"hyprland/workspaces": {
-		"visible": "all",
-		"format": "{icon}",
-		"style": {
-			"workspace.focused": {
-				"font-weight": "bold",
-				"color": "#FFFFFF" // Replace with your desired color
-			}
-		}
-	},
-	"hyprland/submap":{
-		"format":"{}"
-	},
-	"network":{
-		"format-wifi": " {essid}",
-		"format-ethernet": "{ipaddr}/{cidr}",
-		"tooltip-format": "{ifname} via {gwaddr}",
-		"format-linked": "{ifname}(No IP)",
-		"format-disconnected": "Disconnected⚠",
-		"format-alt": "{ifname}:{ipaddr}/{cidr}"
-	},
-	"hyprland/window":{
-		"format":"{title}"
-	},
-	"idle_inhibitor":{
-		"format":"{icon}",
-		"format-icons":{
-			"activated":"\uf06e",
-			"deactivated":"\uf070"
-		}
-	},
-	"cpu":{
-		"interval":10,
-		"format":"CPU:{usage}%"
-	},
-	"memory": {
-		"interval": 10,
-		//"format":"RAM: {used:0.1f}GiB/{total:0.1f}GiB ({percentage}%) SWAP: {swapUsed:0.1f}GiB/{swapTotal:0.1f}GiB ({swapPercentage}%)" 
-		"format": "RAM:{percentage}%"
-	},
-	"battery":{
-		"bat":"BAT0",
-		"states":{
-			"good":95,
-			"warning":30,
-			"critical":5
-		},
-		"format": "{icon}{capacity}%",
-		"format-full": "{{icon}capacity}%",
-		"format-charging": "{capacity}%",
-		"format-plugged": "{capacity}%",
-		"format-alt": "{icon}{time}",
-		"format-icons": ["", "", "", "", ""]
-	},
-	"clock":{
-		"format":"{:%Y/%m/%d %H:%M}"
-	},
-	"pulsaudio":{
-		"format": "{volume}% {icon} {format_source}",
-		"format-bluetooth": "{volume}% {icon} {format_source}",
-		"format-bluetooth-muted": " {icon} {format_source}",
-		"format-muted": " {format_source}",
-		"format-source": "{volume}% ",
-		"format-source-muted": "",
-		"format-icons": {
-		    "headphone": "",
-		    "hands-free": "",
-		    "headset": "",
-		    "phone": "",
-		    "portable": "",
-		    "car": "",
-		    "default": ["", "", ""]
-		},
-		"on-click": "pavucontrol"
-	},
-	"tray":{
-		"icon-size":20,
-		"spacing":10
-	}
+  "layer": "bottom",
+  "position": "top",
+  "height": "13",
+  "spacing": "3",
+  "modules-left": [
+    "hyprland/workspaces",
+    /*"hyprland/submap"*/ "hyprland/window",
+  ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "idle_inhibitor",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "pulseaudio",
+    "tray",
+  ],
+  "hyprland/workspaces": {
+    "visible": "all",
+    "format": "{icon}",
+    "style": {
+      "workspace.focused": {
+        "font-weight": "bold",
+        "color": "#FFFFFF", // Replace with your desired color
+      },
+    },
+  },
+  "hyprland/submap": {
+    "format": "{}",
+  },
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "format-linked": "{ifname}(No IP)",
+    "format-disconnected": "Disconnected⚠",
+    "format-alt": "{ifname}:{ipaddr}/{cidr}",
+  },
+  "hyprland/window": {
+    "format": "{title}",
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "\uf06e",
+      "deactivated": "\uf070",
+    },
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "CPU:{usage}%",
+  },
+  "memory": {
+    "interval": 10,
+    //"format":"RAM: {used:0.1f}GiB/{total:0.1f}GiB ({percentage}%) SWAP: {swapUsed:0.1f}GiB/{swapTotal:0.1f}GiB ({swapPercentage}%)"
+    "format": "RAM:{percentage}%",
+  },
+  "battery": {
+    "bat": "BAT0",
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 5,
+    },
+    "format": "{icon}:{capacity}%",
+    "format-full": "🔋{capacity}%",
+    "format-charging": "{capacity}%",
+    "format-plugged": "{capacity}%",
+    "format-alt": "{icon}{time}",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "clock": {
+    "format": "{:%Y/%m/%d %H:%M}",
+  },
+  "pulseaudio": {
+    "format": "{icon}{volume}% {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": ["", "", ""],
+    "on-click": "pavucontrol",
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10,
+  },
 }

@@ -1,5 +1,5 @@
 * {
-    font-family: hack; 
+    font-family: hack,sans-serif,FontAwesome,Roboto,Helvetica,Arial; 
     font-size: 12px;
 }
 window#waybar {
@@ -9,7 +9,7 @@ window#waybar {
     transition-duration: .5s;
 }
 window#waybar.hidden{
-	opacity:0.2;
+    opacity:0.2;
 }
 
 button {
@@ -38,8 +38,11 @@ button {
 
 #workspaces button.active {
     background-color: #285577;
-}
+    /*border-radius : 8px;
+    padding : 5px;*/
 
+}
+#network,
 #clock,
 #battery,
 #cpu,
@@ -49,6 +52,7 @@ button {
 #mode,
 #idle_inhibitor,
 #window,
+
 #workspaces {
     margin: 0 5px;
 }
@@ -101,4 +105,34 @@ label:focus {
 
 #idle_inhibitor.activated {
     background-color: #285577;
+}
+#clock{
+    background-color: #285577;
+    border-radius : 8px;
+    padding : 5px;
+}
+#cpu{
+    background-color: #285577;
+    border-radius : 8px;
+    padding : 5px;
+}
+#battery{
+    background-color: #285577;
+    border-radius : 8px;
+    padding : 5px;
+}
+#network{
+    background-color: #285577;
+    border-radius : 8px;
+    padding : 5px;
+}
+#memory{
+    background-color: #285577;
+    border-radius : 8px;
+    padding : 5px;
+}
+#pulseaudio{
+    background-color: #285577;
+    border-radius : 8px;
+    padding : 5px;
 }

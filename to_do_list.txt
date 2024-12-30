@@ -1,2 +1,0 @@
-find command for scaling in hyprctl monitors
-vim multiple files / visual mode / comment multiple line
