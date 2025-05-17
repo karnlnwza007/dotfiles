@@ -14,8 +14,14 @@ alias edp='bash ~/dotfiles/toggle_eDP.sh'
 alias py='python'
 alias grep='grep --color=auto'
 alias nf='neofetch'
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
+#alias get_idf='. $HOME/esp/esp-idf/export.sh'
+#alias to compile and flash using arduino-cli
+alias arduinoburn="bash ~/arduinoburn.sh"
 PS1='[\u@\h \W]\$ '
+
+#source 
+. $HOME/esp/esp-idf/export.sh
+neofetch
 
 # >>> juliaup initialize >>>
 
@@ -31,7 +37,6 @@ case ":$PATH:" in
 esac
 
 # <<< juliaup initialize <<<
-
 export QSYS_ROOTDIR="/home/karn/intelFPGA_lite/23.1std/quartus/sopc_builder/bin"
 export PATH="$PATH:/home/karn/intelFPGA_lite/23.1std/quartus/bin"
 export LM_LICENSE_FILE=/home/karn/intelFPGA_lite/23.1std/questa_fse/license.dat
